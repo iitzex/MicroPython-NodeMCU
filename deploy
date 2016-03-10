@@ -1,0 +1,2 @@
+#!/bin/sh
+make PORT=/dev/tty.SLAB_USBtoUART BAUD=921600 deploy
