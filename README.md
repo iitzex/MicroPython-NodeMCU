@@ -1,4 +1,4 @@
-# micropython-nodemcu
+# MicroPython-NodeMCU
 Command for MAC
 ```python
 deploy : quick command to modify the serial port and baud rate
