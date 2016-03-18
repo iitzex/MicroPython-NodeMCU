@@ -1,7 +1,8 @@
 # MicroPython-NodeMCU
-Command for MAC
+Command for burn flash
 ```python
 deploy : quick command to modify the serial port and baud rate
+        with fast speed
         port = /dev/tty.SLAB_USBtoUART
         baud = 921600
 ```
@@ -9,13 +10,18 @@ deploy : quick command to modify the serial port and baud rate
 Examples for micropython at NodeMCU
 ```python
 
-ledon.py : light LED 
+led_on.py : light LED 
         GPIO setting, OUT
 
 flash_key : push the flash button will light LED
-        GPIO setting, IN 
+        GPIO setting, IN, Timer w/ polling 
 
 led_breath.py : make LED 
+        software PWM, Timer, w/ delay
+        may cause reset w/o correct setting
+
+led_breath_timer.py : make LED 
         software PWM, Timer
+        set each period w/ timer
 
 ```
