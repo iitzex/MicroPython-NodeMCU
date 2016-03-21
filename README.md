@@ -35,5 +35,7 @@ stepper.py : use 28BYJ-48 5V DC stepper
 sonic.py : use HC-SR04 to measure distance
         Pin:D5, D6
 
+lcd.py : show message on 2 line LCD Display
+        Pin:D1, D2, D5, D6, D7, D8
 
 ```
